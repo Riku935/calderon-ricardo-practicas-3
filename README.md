@@ -5,6 +5,10 @@ Correo **GitHub**: exodo302.richy@gmail.com
 
 Correo academico: cdmx2001@amerike.edu.mx
 
+Sitio desplegado en Astro: https://stupendous-boba-39a694.netlify.app/
+
+Repositorio de mi sitio en Astro: https://github.com/Riku935/Sitio-Astro-
+
 ![Foto Mia](/Assets/Foto%20de%20Perfil.jpg)
 
 ---- 
