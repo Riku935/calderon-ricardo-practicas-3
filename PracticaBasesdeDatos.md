@@ -11,7 +11,43 @@
 
 ## Atributos:
 
-1
+__Ventas__
+
+- Numero de transaccion
+- Nombre del empleado
+- Fecha de la transaccion
+- Hora de la transaccion 
+- Monto total 
+
+
+__Compras__
+
+- Numero de transaccion
+- Nombre del empleado
+- Fecha de la transaccion
+- Hora de la transaccion 
+- Direccion de la sucursal
+- Monto total 
+- Productos comprados
+
+__Cliente__
+
+- Nombre
+- Numero de socio
+- Dinero disponible (¿?)
+
+__Empleados__
+
+- Nombre 
+- Edad
+- Numero de empleado
+- Fecha de incorporacion
+- Clave RFC
+
+__Menú__
+
+- Producto
+- Precio del producto
 
 ## Relaciones:
 
