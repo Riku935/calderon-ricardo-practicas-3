@@ -13,7 +13,7 @@
 
 __Ventas__
 
-- Numero de transaccion
+- Numero de transaccion (PK)
 - Nombre del empleado
 - Fecha de la transaccion
 - Hora de la transaccion 
@@ -22,7 +22,7 @@ __Ventas__
 
 __Compras__
 
-- Numero de transaccion
+- Numero de transaccion (PK)
 - Nombre del empleado
 - Fecha de la transaccion
 - Hora de la transaccion 
@@ -32,21 +32,21 @@ __Compras__
 
 __Cliente__
 
-- Nombre
+- Nombre (PK)
 - Numero de socio
 - Dinero disponible (¿?)
 
 __Empleados__
-
-- Nombre 
+ 
+- Numero de empleado (PK)
 - Edad
-- Numero de empleado
+- Nombre
 - Fecha de incorporacion
 - Clave RFC
 
 __Menú__
 
-- Producto
+- Producto (PK)
 - Precio del producto
 
 ## Relaciones:
