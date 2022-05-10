@@ -11,6 +11,10 @@ Repositorio de mi sitio en Astro: https://github.com/Riku935/Sitio-Astro-
 
 Sitio desplegado en Vercel: https://sitio-astro.vercel.app/
 
+### Practica 6
+
+[Base de Datos](/PracticaBasesdeDatos.md)
+
 ![Foto Mia](/Assets/Foto%20de%20Perfil.jpg)
 
 ---- 
