@@ -14,7 +14,7 @@
 __Ventas__
 
 - Numero de transaccion (PK)
-- Nombre del empleado
+- Nombre del empleado (FK)
 - Fecha de la transaccion
 - Hora de la transaccion 
 - Monto total 
@@ -23,7 +23,7 @@ __Ventas__
 __Compras__
 
 - Numero de transaccion (PK)
-- Nombre del empleado
+- Nombre del empleado (FK)
 - Fecha de la transaccion
 - Hora de la transaccion 
 - Direccion de la sucursal
@@ -33,21 +33,26 @@ __Compras__
 __Cliente__
 
 - Nombre (PK)
-- Numero de socio
+- Numero de socio (UQ)
 - Dinero disponible (¿?)
 
 __Empleados__
  
-- Numero de empleado (PK)
+- Nombre de empleado (PK_id)
 - Edad
-- Nombre
+- Numero de empleado
 - Fecha de incorporacion
-- Clave RFC
+- Clave RFC (UQ)
 
 __Menú__
 
 - Producto (PK)
 - Precio del producto
+
+__Quejas__
+
+- Fecha
+- Comentario (PK)
 
 ## Relaciones:
 
