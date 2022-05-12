@@ -33,7 +33,7 @@ __Compras__
 __Cliente__
 
 - Numero temporal de cliente (PK)
-- Nombre 
+- Nombre (FK_id)
 - Numero de socio (UQ)
 
 __Empleados__
@@ -52,6 +52,8 @@ __Menú__
 
 __Quejas__
 
+- Id de la queja (PK)
+- Nombre de cliente (FK)
 - Fecha
 - Comentario (PK)
 
@@ -61,7 +63,7 @@ __Quejas__
 1. Los __empleados__ realizan __ventas__ (M - M)
 1. Los __clientes__ realizan __quejas__ (1 - M)
 1. Los __clientes__ revisan el __menu__ (1 - M)
-
+1. Los __empleados__ revisan las __quejas__ (M - M)
 
 
 ### Valores del menu:
