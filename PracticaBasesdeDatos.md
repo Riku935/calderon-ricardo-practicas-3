@@ -32,21 +32,22 @@ __Compras__
 
 __Cliente__
 
-- Nombre (PK)
+- Numero temporal de cliente (PK)
+- Nombre 
 - Numero de socio (UQ)
-- Dinero disponible (¿?)
 
 __Empleados__
  
-- Nombre de empleado (PK_id)
+- Numero de empleado (PK_id)
+- Nombre de empleado 
 - Edad
-- Numero de empleado
 - Fecha de incorporacion
 - Clave RFC (UQ)
 
 __Menú__
 
-- Producto (PK)
+- ID del producto (PK)
+- Nombre del producto 
 - Precio del producto
 
 __Quejas__
