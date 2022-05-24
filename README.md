@@ -15,6 +15,12 @@ Sitio desplegado en Vercel: https://sitio-astro.vercel.app/
 
 [Base de Datos](/PracticaBasesdeDatos.md)
 
+## Cuarto Periodo
+
+[Diagrama de Relacion](/calderon-ricardo-practicas-3/Modelo_Relacional.drawio.png)
+
+[Excel](/calderon-ricardo-practicas-3/Relaciones.xlsx)
+
 ![Foto Mia](/Assets/Foto%20de%20Perfil.jpg)
 
 ---- 
