@@ -4,18 +4,17 @@ USE hamburguesas_donRiku;
 
 CREATE TABLE Customer(
     customer_number VARCHAR(8) PRIMARY KEY NOT NULL,
+    customer_name VARCHAR(255),
     nameid VARCHAR(255),
     member_number VARCHAR(5) UNIQUE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE Employee(
-    employee_id VARCHAR(255) NOT NULL PRIMARY KEY, 
-    employee_name VARCHAR(255) NOT NULL,
+CREATE TABLE Employe(
+    employe_id VARCHAR(255) NOT NULL PRIMARY KEY, 
+    employe_name VARCHAR(255) NOT NULL,
     age VARCHAR(3) NOT NULL,
-    incorporation_date DATE TIME NOT NULL,
-    rfc_key VARCHAR(13) UNIQUE NOT NULL,
-    
-
+    incorporation_date DATETIME NOT NULL,
+    rfc_key VARCHAR(13) UNIQUE NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Menu(
@@ -27,14 +26,14 @@ CREATE TABLE Menu(
 
 CREATE TABLE Purchase(
     transaction_name VARCHAR(4) PRIMARY KEY,
-    employe_name TEXT NOT NULL,
-    transaction_time DATE TIME NOT NULL,
-    transaction_date DATE TIME NOT NULL,
+    employe_id VARCHAR(255) NOT NULL, 
+    transaction_time DATETIME NOT NULL,
+    transaction_date DATETIME NOT NULL,
     branch_adress TEXT NOT NULL,
     purchased_product TEXT NOT NULL,
-    total_amount VARCHAR (5) NOT NULL,
-    FOREIGN KEY(employee_name)
-    REFERENCES Employee (employee_name)
+    total_amount VARCHAR(5) NOT NULL,
+    FOREIGN KEY(employe_id)
+    REFERENCES Employe (employe_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 
@@ -42,12 +41,12 @@ CREATE TABLE Purchase(
 
 CREATE TABLE Sale(
     transaction_number INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    employee_name TEXT NOT NULL,
-    transaction_date DATE TIME NOT NULL,
-    trasaction_time DATE TIME NOT NULL,
-    total_amount VARCHAR (5) NOT NULL
-    FOREIGN KEY(employee_name)
-    REFERENCES Employee (employee_name)
+    employe_id VARCHAR(255) NOT NULL, 
+    transaction_date DATETIME NOT NULL,
+    trasaction_time DATETIME NOT NULL,
+    total_amount VARCHAR (5) NOT NULL,
+    FOREIGN KEY(employe_id)
+    REFERENCES Employe (employe_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 
@@ -55,11 +54,11 @@ CREATE TABLE Sale(
 
 CREATE TABLE Complaints(
     complaint_id VARCHAR(255) PRIMARY KEY,
-    customer_name VARCHAR(255) NOT NULL,
-    date_id DATE TIME NO NULL,
-    commentary TEXT NOT NULL
-    FOREIGN KEY(customer_name)
-    REFERENCES Customer (customer_name)
+    customer_number VARCHAR(255),
+    date_id DATETIME NOT NULL,
+    commentary TEXT NOT NULL,
+    FOREIGN KEY(customer_number)
+    REFERENCES Customer (customer_number)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 
