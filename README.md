@@ -21,6 +21,8 @@ Sitio desplegado en Vercel: https://sitio-astro.vercel.app/
 
 [Excel](/Relaciones.xlsx)
 
+[Codigo](DonRiku_schema.sql)
+
 ![Foto Mia](/Assets/Foto%20de%20Perfil.jpg)
 
 ---- 
