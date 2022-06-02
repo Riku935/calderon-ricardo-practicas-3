@@ -63,3 +63,23 @@ CREATE TABLE Complaints(
     ON UPDATE CASCADE
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO menu (product_id, product_name, product_price) VALUES
+    (1, 'Hamburguesa sencilla'),
+    (2, 'Hamburguesa doble'),
+    (3, 'Hamburguesa hawaiana'),
+    (4, 'Hamburguesa de pollo'),
+    (5, 'Hamburguesa angus'),
+    (6, 'Hamburguesa BBQ'),
+    (7, 'Hamburguesa roast beef'),
+    (8, 'Hamburguesa vegetariana'),
+    (9, 'Papas a la francesa'),
+    (10, 'Aros de cebolla'),
+    (11, 'Agua embotellada'),
+    (12, 'Refresco de manzana'),
+    (13, 'Refresco de cola'),
+    (14, 'Refresco de naranja'),
+    (15, 'Refresco de limon'),
+    (16, 'Malteada de chocolate'),
+    (17, 'Malteada de fresa'),
+    (18, 'Malteada de vainilla');
