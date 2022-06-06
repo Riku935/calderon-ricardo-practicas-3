@@ -85,4 +85,41 @@ __Quejas__
  - Malteada de chocolate
  - Malteada de fresa
  - Malteada de vainilla
+
+
+ ## Reglas de negocio:
+
+ 
+ ## Venta
+ 1. Crear venta
+ 1. Leer todas las ventas
+ 1. Actualizar ventas
+
+ ## Compra
+ 1. Crear compra
+ 1. Leer todas las compras
+ 1. Actualizar compra
+
+ ## Cliente
+ 1. Crear cliente
+ 1. Leer todos los clientes
+ 1. Actualizar datos del cliente
+ 1. Eliminar cliente
+
+
+ ## Empleado
+ 1. Crear empleado
+ 1. Leer todos los empleados
+ 1. Actualizar datos del empleado
+ 1. Eliminar empleado
+
+ ## Menu
+ 1. Crear Menu
+ 1. Actualizar Menu
+ 1. Leer Menu
+
+ ## Quejas
+ 1. Crear queja
+ 1. Leer quejas
+ 1. Eliminar queja
  
