@@ -3,13 +3,13 @@ CREATE DATABASE IF NOT EXISTS hamburguesas_donRiku;
 USE hamburguesas_donRiku;
 
 CREATE TABLE Customer(
-    customer_number INTEGER PRIMARY KEY,
-    customer_name VARCHAR(255),
-    member_number VARCHAR(5) UNIQUE
+    customer_number INTEGER PRIMARY KEY NOT NULL,
+    customer_name VARCHAR(255) NOT NULL,
+    member_number VARCHAR(5) UNIQUE NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Employe(
-    employe_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+    employe_id INTEGER PRIMARY KEY NOT NULL, 
     employe_name VARCHAR(255) NOT NULL,
     age INTEGER NOT NULL,
     incorporation_date VARCHAR(255) NOT NULL,
@@ -17,31 +17,29 @@ CREATE TABLE Employe(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Menu(
-    product_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    product_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
     productprice INTEGER NOT NULL,
     productname TEXT NOT NULL
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Purchase(
-    transaction_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    employe_id VARCHAR(8) NOT NULL, 
+    transaction_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    employe_id INTEGER NOT NULL, 
     transaction_date DATETIME NOT NULL,
     branch_adress TEXT NOT NULL,
     product_name TEXT NOT NULL,
     total_amount VARCHAR(5) NOT NULL,
     FOREIGN KEY(employe_id)
     REFERENCES Employe (employe_id)
-    FOREIGN KEY(product_name)
-    REFERENCES Menu (product_name)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Sale(
-    transaction_number INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    employe_id VARCHAR(8) NOT NULL, 
+    transaction_number INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    employe_id INTEGER NOT NULL, 
     transaction_date DATETIME NOT NULL,
     total_amount VARCHAR (5) NOT NULL,
     FOREIGN KEY(employe_id)
@@ -52,8 +50,8 @@ CREATE TABLE Sale(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Complaints(
-    complaint_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    customer_number INTEGER,
+    complaint_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    customer_number INTEGER NOT NULL,
     date_id DATETIME NOT NULL,
     commentary TEXT NOT NULL,
     FOREIGN KEY(customer_number)
@@ -63,7 +61,7 @@ CREATE TABLE Complaints(
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO menu (product_id, product_name, product_price) VALUES
+INSERT INTO menu (product_id, productname, productprice) VALUES
     (1, 'Hamburguesa sencilla', 50),
     (2, 'Hamburguesa doble',70),
     (3, 'Hamburguesa hawaiana', 70),
