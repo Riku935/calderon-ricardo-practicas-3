@@ -17,11 +17,15 @@ Sitio desplegado en Vercel: https://sitio-astro.vercel.app/
 
 ## Cuarto Periodo
 
+[Modelo entidad relacion](/PracticaBasesdeDatos.md)
+
 [Diagrama de Relacion](/Modelo_Relacional.drawio.png)
 
 [Excel](/Relaciones.xlsx)
 
-[Codigo](DonRiku_schema.sql)
+[DonRiku_schema.sql](/DonRiku_schema.sql)
+
+[DonRiku_crud.sql](/DonRiku_crud.sql)
 
 ![Foto Mia](/Assets/Foto%20de%20Perfil.jpg)
 
