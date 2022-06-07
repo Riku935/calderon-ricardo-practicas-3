@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS hamburguesas_donRiku;
 USE hamburguesas_donRiku;
 
 CREATE TABLE Customer(
-    customer_number INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    customer_number INTEGER PRIMARY KEY,
     customer_name VARCHAR(255),
     member_number VARCHAR(5) UNIQUE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -53,7 +53,7 @@ CREATE TABLE Sale(
 
 CREATE TABLE Complaints(
     complaint_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    customer_number VARCHAR(8),
+    customer_number INTEGER,
     date_id DATETIME NOT NULL,
     commentary TEXT NOT NULL,
     FOREIGN KEY(customer_number)
